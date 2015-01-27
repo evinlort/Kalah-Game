@@ -19,3 +19,4 @@ void need_to_grab(int,int,Node*);
 void grab(int,int,Node*);
 void print(int*);
 int legal_move(Node*,int);
+int player_zeros(Node*,int);

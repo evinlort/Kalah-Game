@@ -42,6 +42,6 @@ while(game_is_not_finished(root)) {
 	printf("Move is %d\n",move);
 }
 print(root->board);
-printf("Winner is 'Human/AI'\n");
+printf("Winner is '%s'\n",root->board[0]>root->board[7]?"AI":"Human");
 return 0;
 }

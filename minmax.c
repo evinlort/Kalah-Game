@@ -41,14 +41,16 @@ int minmax(Node * r) {
 	int m;
 	int last_rock_pos;
 	srand(time(NULL));
-	if(!check_zeros(r)) {
-	do {
-		printf("%d rand\n",rand());
-		m=rand() % 6 + 8;
-	} while(legal_move(r,m));
+//TODO replace check_zeros from here
+//	if(!check_zeros(r)) {
+	if(!player_zeros(r,1)) { 
+		do {
+			printf("%d rand\n",rand());
+			m=rand() % 6 + 8;
+		} while(legal_move(r,m));
 	
-	last_rock_pos=scatter_rocks(r,m,1);
-	return last_rock_pos;
+		last_rock_pos=scatter_rocks(r,m,1);
+		return last_rock_pos;
 	}
 	else
 		return -1;
@@ -82,7 +84,8 @@ int scatter_rocks(Node * scattered,int hole, int move) {
 
 int stop_at_current_player_kalah(Node * n,int move, int scatter_stop) {
 	int zeros;
-	zeros = check_zeros(n);
+	//zeros = check_zeros(n);
+	zeros = player_zeros(n,move);
 	if( ((move && scatter_stop == 0) || (!move && scatter_stop == 7)) && !zeros )
 		return 1;
 	else
@@ -118,11 +121,15 @@ int check_zeros(Node * s) {
 			break;
 		}
 	if( checkH || checkAI ) {
-		for(i = 8;i < 14;i++)
+		for(i = 8;i < 14;i++) {
 			s->board[0]+=s->board[i];
+			s->board[i]=0;
+		}
 //	if( checkAI )
-		for(i = 1;i < 7;i++)
+		for(i = 1;i < 7;i++) {
 			s->board[7]+=s->board[i];
+			s->board[i]=0;
+		}
 	}
 	if( checkH || checkAI )
 		return 1;	//Game end
@@ -155,3 +162,22 @@ int legal_move(Node * s, int hmove) {
 	else
 		return 1;	
 }
+
+int player_zeros(Node * n, int move) {
+	int i;
+	int till;
+	int is_zero = 1;
+	i = move?8:1;
+	till = move?14:7;
+	for(;i<till;i++)
+		if(n->board[i]!=0) {
+			is_zero = 0;
+			break;
+		}
+	if(is_zero)
+		return 1;
+	else
+		return 0;
+}
+
+
