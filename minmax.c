@@ -180,4 +180,30 @@ int player_zeros(Node * n, int move) {
 		return 0;
 }
 
+int AImove(Node * n) {
+	int m;
+	int last_rock_pos;
+	srand(time(NULL));
+	
+do {
+	if(!player_zeros(n,1)) { 
+		do {
+			printf("%d rand\n",rand());
+			m=rand() % 6 + 8;
+		} while(legal_move(n,m));
+	
+		last_rock_pos=scatter_rocks(n,m,1);
+	}
+	else {
+		last_rock_pos =  -1;
+		break;
+	}
+} while(stop_at_current_player_kalah(n,1,last_rock_pos));
+	
+	return last_rock_pos;
+	
+}
 
+int Hmove(Node * n) {
+	
+}

@@ -45,3 +45,4 @@ print(root->board);
 printf("Winner is '%s'\n",root->board[0]>root->board[7]?"AI":"Human");
 return 0;
 }
+//TODO AImove and Hmove

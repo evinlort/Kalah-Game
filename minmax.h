@@ -20,3 +20,6 @@ void grab(int,int,Node*);
 void print(int*);
 int legal_move(Node*,int);
 int player_zeros(Node*,int);
+
+int AImove(Node*);
+int Hmove(Node*);
