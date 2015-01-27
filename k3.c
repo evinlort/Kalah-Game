@@ -20,7 +20,7 @@ do {
 		getchar();
 	}
 } while(move<0 || move>1);
-while(game_is_not_finished()) {
+while(game_is_not_finished(root)) {
 	do {
 		print(root->board);
 		if(move) {
@@ -37,9 +37,11 @@ while(game_is_not_finished()) {
 					
 			scatter_stops = scatter_rocks(root,human_move,move);
 		}
-	} while(stop_at_current_player_kalah(move,scatter_stops));
+	} while(stop_at_current_player_kalah(root,move,scatter_stops));
 	move=move?0:1;
 	printf("Move is %d\n",move);
 }
+print(root->board);
+printf("Winner is 'Human/AI'\n");
 return 0;
 }
