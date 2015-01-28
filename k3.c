@@ -21,24 +21,17 @@ do {
 	}
 } while(move<0 || move>1);
 while(game_is_not_finished(root)) {
-	do {
+//	do {
 		print(root->board);
 		if(move) {
-			//AImove(root);
-			scatter_stops = minmax(root);
+			AImove(root);
+			//scatter_stops = minmax(root);
 		}
 		else {
-			do {
-				printf("Enter the number of hole (1-6) : _\b");
-				while(scanf("%d",&human_move)!=1) {
-					printf("Enter the number of hole (1-6) : _\b");
-					getchar();
-				}
-			} while( (human_move<1 || human_move>6) || legal_move(root,human_move) );
-			//Hmove(root);		
-			scatter_stops = scatter_rocks(root,human_move,move);
+			Hmove(root);		
+			//scatter_stops = scatter_rocks(root,human_move,move);
 		}
-	} while(stop_at_current_player_kalah(root,move,scatter_stops));
+//	} while(stop_at_current_player_kalah(root,move,scatter_stops));
 	move=move?0:1;
 	printf("Move is %d\n",move);
 }

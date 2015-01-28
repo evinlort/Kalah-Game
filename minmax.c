@@ -188,6 +188,7 @@ int AImove(Node * n) {
 	srand(time(NULL));
 	
 do {
+	print(n->board);
 	if(!player_zeros(n,1)) { 
 		do {
 			m=rand() % 6 + 8;
@@ -201,10 +202,23 @@ do {
 	}
 } while(stop_at_current_player_kalah(n,1,last_rock_pos));
 	
-	return last_rock_pos;
+	return m;
 	
 }
 
 int Hmove(Node * n) {
-	
+	int last_rock_pos;
+	int human_move;
+do {
+	print(n->board);
+	do {
+		printf("Enter the number of hole (1-6) : _\b");
+		while(scanf("%d",&human_move)!=1) {
+			printf("Enter the number of hole (1-6) : _\b");
+			getchar();
+		}
+	} while( (human_move<1 || human_move>6) || legal_move(n,human_move) );
+	last_rock_pos = scatter_rocks(n,human_move,0);
+} while(stop_at_current_player_kalah(n,0,last_rock_pos));
+	return human_move;
 }
