@@ -9,7 +9,7 @@ int main(void) {
 
 Node * root;
 int move;
-int human_move;
+int player_move;
 int scatter_stops;
 root = init();
 
@@ -24,16 +24,16 @@ while(game_is_not_finished(root)) {
 //	do {
 		print(root->board);
 		if(move) {
-			AImove(root);
+			player_move = AImove(root);
 			//scatter_stops = minmax(root);
 		}
 		else {
-			Hmove(root);		
+			player_move = Hmove(root);		
 			//scatter_stops = scatter_rocks(root,human_move,move);
 		}
 //	} while(stop_at_current_player_kalah(root,move,scatter_stops));
 	move=move?0:1;
-	printf("Move is %d\n",move);
+	printf("Move is %s - %d\n",move?"AI":"H",player_move);
 }
 print(root->board);
 printf("Winner is '%s'\n",root->board[0]>root->board[7]?"AI":"Human");
