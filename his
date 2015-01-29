@@ -1,0 +1,1000 @@
+ 1002  let "c<<=1"
+ 1003  echo $c
+ 1004  let "c<<=1"
+ 1005  echo $c
+ 1006  c=1
+ 1007  let "c<<=1"
+ 1008  echo $c
+ 1009  let "c<<=1"
+ 1010  echo $c
+ 1011  c=1; while [ c -gt 0 ]; do let "c<<=1"; echo $c; done
+ 1012  c=1; while [ $c -gt 0 ]; do let "c<<=1"; echo $c; done
+ 1013  c=1;t=0; while [ $c -gt 0 ]; do let "c<<=1"; echo $c; let "t+=1"; done
+ 1014  echo $t
+ 1015  exit
+ 1016  cd Games/
+ 1017  ls
+ 1018  locate linkedlist.h
+ 1019  cat ll.c
+ 1020  vim ll.c
+ 1021  ./ll
+ 1022  ls
+ 1023  gcc ll.c -oll
+ 1024  gcc ll.c -oll | more
+ 1025  locate ll.c
+ 1026  locate "ll.c"
+ 1027  find / -n ll.c
+ 1028  man find
+ 1029  find / -name ll.c
+ 1030  find /home/evg/ -name ll.c
+ 1031  find /home/evg/Games/ -name ll.c
+ 1032  cd 2
+ 1033  ls
+ 1034  ./ll
+ 1035  vim ll.c
+ 1036  python
+ 1037  cd Games/
+ 1038  vim k2.c
+ 1039  ls
+ 1040  ls k*
+ 1041  cd ka
+ 1042  cd kalah/
+ 1043  ls
+ 1044  cd ..
+ 1045  mkdir k3
+ 1046  cd k3
+ 1047  touch k3.c
+ 1048  touch minmax.c
+ 1049  touch minmax.h
+ 1050  ls
+ 1051  ls -l
+ 1052  vim k3.c 
+ 1053  vim minmax.h 
+ 1054  gcc k3.c -o k3
+ 1055  vim minmax.h 
+ 1056  gcc k3.c -o k3
+ 1057  vim minmax.h 
+ 1058  gcc k3.c -o k3
+ 1059  ./k3
+ 1060  vim k3
+ 1061  vim k3.c
+ 1062  gcc k3.c -o k3
+ 1063  ./k3
+ 1064  cd ..
+ 1065  vim k2.c
+ 1066  cd k3/
+ 1067  vim k3.c 
+ 1068  gcc k3.c -o k3
+ 1069  ./k3
+ 1070  vim k3.c 
+ 1071  gcc k3.c -o k3
+ 1072  ./k3
+ 1073  vim k3.c 
+ 1074  gcc k3.c -o k3
+ 1075  ./k3
+ 1076  vim k3.c 
+ 1077  gcc k3.c -o k3
+ 1078  ./k3
+ 1079  vim k3.c 
+ 1080  gcc k3.c -o k3
+ 1081  vim k3.c 
+ 1082  gcc k3.c -o k3
+ 1083  ./k3
+ 1084  vim k3.c 
+ 1085  vim minmax.h
+ 1086  vim k3.c 
+ 1087  gcc k3.c -o k3
+ 1088  vim k3.c 
+ 1089  gcc k3.c -o k3
+ 1090  ./k3
+ 1091  vim k3.c 
+ 1092  gcc k3.c -o k3
+ 1093  ./k3
+ 1094  vim k3.c 
+ 1095  gcc k3.c -o k3
+ 1096  ./k3
+ 1097  vim k3.c 
+ 1098  gcc k3.c -o k3
+ 1099  vim k3.c 
+ 1100  gcc k3.c -o k3
+ 1101  ./k3
+ 1102  vim k3.c 
+ 1103  gcc k3.c -o k3
+ 1104  ./k3
+ 1105  vim k3.c 
+ 1106  gcc k3.c -o k3
+ 1107  ./k3
+ 1108  vim k3.c 
+ 1109  gcc k3.c -o k3
+ 1110  vim minmax.h
+ 1111  vim k3.c 
+ 1112  vim minmax.h
+ 1113  vim minmax.c
+ 1114  gcc k3.c -o k3
+ 1115  vim k3.c 
+ 1116  gcc k3.c -o k3
+ 1117  vim k3.c 
+ 1118  gcc k3.c -o k3
+ 1119  ./k3
+ 1120  vim k3.c 
+ 1121  gcc k3.c -o k3
+ 1122  ./k3
+ 1123  vim k3.c 
+ 1124  vim minmax.c
+ 1125  cd Games/k3
+ 1126  cd ..
+ 1127  ls
+ 1128  vim k2.c
+ 1129  cd k3
+ 1130  vim k3.c
+ 1131  vim minmax.c
+ 1132  vim minmax.h
+ 1133  gcc k3.c -o K3
+ 1134  rm k3
+ 1135  ./K3
+ 1136  vim minmax.c
+ 1137  ls -la
+ 1138  rm .minmax.c.swp 
+ 1139  vim minmax.c
+ 1140  ls -la
+ 1141  vim minmax.h
+ 1142  vim k3.c 
+ 1143  vim minmax.c
+ 1144  ls -la
+ 1145  vim minmax.h
+ 1146  ls -la
+ 1147  vim k3.c 
+ 1148  vim minmax.h
+ 1149  vim minmax.c
+ 1150  ls -la
+ 1151  gcc k3.c -o K3 
+ 1152  vim minmax.c
+ 1153  gcc k3.c -o K3 
+ 1154  ./K3 
+ 1155  vim minmax.c
+ 1156  gcc k3.c -o K3 
+ 1157  ./K3 
+ 1158  vim minmax.c
+ 1159  gcc k3.c -o K3 
+ 1160  ./K3 
+ 1161  ls -la
+ 1162  vim minmax.c
+ 1163  ls -la
+ 1164  gcc k3.c -o K3 
+ 1165  ./K3 
+ 1166  vim minmax.c
+ 1167  vim k3.c 
+ 1168  gcc -g k3.c -o K3 
+ 1169  ./K3 
+ 1170  gdb ./K3 
+ 1171  valgrind ./K3
+ 1172  man valgrind
+ 1173  valgrind ./K3 -vgdb=full -v --log_file=LOG
+ 1174  ls
+ 1175  valgrind ./K3 -vgdb=full -v --log-file=LOG
+ 1176  ls
+ 1177  valgrind ./K3 -vgdb=full -v --log-file=LOG > LOG
+ 1178  ls
+ 1179  ls -l
+ 1180  cat LOG 
+ 1181  rm LOG 
+ 1182  valgrind ./K3 -vgdb=full -v --log-file="LOG"
+ 1183  ls
+ 1184  valgrind -vgdb=full -v --log-file="LOG" ./K3
+ 1185  valgrind --vgdb=full -v --log-file="LOG" ./K3
+ 1186  ls
+ 1187  ls -l
+ 1188  vim LOG 
+ 1189  vim k3.c 
+ 1190  vim minmax.c
+ 1191  gcc -g k3.c -o K3 
+ 1192  valgrind --vgdb=full -v --log-file="LOG" ./K3
+ 1193  vim LOG 
+ 1194  vim minmax.c
+ 1195  ls -l
+ 1196  gcc minmax.c -o M1
+ 1197  vim minmax.c
+ 1198  gcc minmax.c -o M1
+ 1199  vim minmax.c
+ 1200  vim k3.c 
+ 1201  gcc k3.c -o K3 
+ 1202  ./K3 
+ 1203  gdb ./K3 
+ 1204  exit
+ 1205  cd Games/k3
+ 1206  ls
+ 1207  valgrind --log-file="LOG" ./K3
+ 1208  vim LOG 
+ 1209  valgrind --log-file="LOG" --track-origins=yes ./K3
+ 1210  vim LOG 
+ 1211  vim k3.c
+ 1212  gcc -g k3.c -o K3 
+ 1213  ./K3 
+ 1214  vim minmax.c
+ 1215  gcc -g k3.c -o K3 
+ 1216  ./K3 
+ 1217  vim k3.c
+ 1218  gcc -g k3.c -o K3 
+ 1219  ./K3 
+ 1220  vim k3.c
+ 1221  gcc -g k3.c -o K3 
+ 1222  vim k3.c
+ 1223  gcc -g k3.c -o K3 
+ 1224  vim k3.c
+ 1225  gcc -g k3.c -o K3 
+ 1226  vim k3.c
+ 1227  gcc -g k3.c -o K3 
+ 1228  vim k3.c
+ 1229  gcc -g k3.c -o K3 
+ 1230  vim k3.c
+ 1231  gcc -g k3.c -o K3 
+ 1232  vim k3.c
+ 1233  gcc -g k3.c -o K3 
+ 1234  vim k3.c
+ 1235  gcc -g k3.c -o K3 
+ 1236  ./K3 
+ 1237  vim k3.c
+ 1238  vim minmax.c
+ 1239  gcc -g k3.c -o K3 
+ 1240  ./K3 
+ 1241  gdb ./K3 
+ 1242  vim k3.c
+ 1243  gdb ./K3 
+ 1244  vim minmax.c
+ 1245  gcc -g k3.c -o K3 
+ 1246  ./K3 
+ 1247  gdb ./K3 
+ 1248  vim minmax.c
+ 1249  gcc -g k3.c -o K3 
+ 1250  gdb ./K3 
+ 1251  vim minmax.c
+ 1252  gcc -g k3.c -o K3 
+ 1253  vim minmax.c
+ 1254  gcc -g k3.c -o K3 
+ 1255  ./K3 
+ 1256  vim minmax.c
+ 1257  gcc -g k3.c -o K3 
+ 1258  ./K3 
+ 1259  vim minmax.c
+ 1260  gcc -g k3.c -o K3 
+ 1261  ./K3 
+ 1262  clear
+ 1263  vim k3.c
+ 1264  vim minmax.c
+ 1265  gcc -g k3.c -o K3 
+ 1266  ./K3 
+ 1267  vim minmax.c
+ 1268  gcc -g k3.c -o K3 
+ 1269  ./K3 
+ 1270  vim minmax.c
+ 1271  vim k3.c
+ 1272  vim minmax.c
+ 1273  gcc -g k3.c -o K3 
+ 1274  ./K3 
+ 1275  vim minmax.c
+ 1276  vim minmax.h
+ 1277  vim minmax.c
+ 1278  vim minmax.h
+ 1279  gcc -g k3.c -o K3 
+ 1280  vim minmax.c
+ 1281  gcc -g k3.c -o K3 
+ 1282  ./K3 
+ 1283  vim minmax.c
+ 1284  gcc -g k3.c -o K3 
+ 1285  ./K3 
+ 1286  vim minmax.c
+ 1287  gcc -g k3.c -o K3 
+ 1288  ./K3 
+ 1289  vim minmax.c
+ 1290  gcc -g k3.c -o K3 
+ 1291  ./K3 
+ 1292  clear
+ 1293  vim minmax.c
+ 1294  vim k3.c
+ 1295  vim minmax.c
+ 1296  vim k3.c
+ 1297  vim minmax.c
+ 1298  vim minmax.h
+ 1299  vim k3.c
+ 1300  vim minmax.c
+ 1301  gcc -g k3.c -o K3 
+ 1302  vim minmax.c
+ 1303  gcc -g k3.c -o K3 
+ 1304  ./K3
+ 1305  cd ..
+ 1306  ls
+ 1307  vim k2.c
+ 1308  cd k3
+ 1309  vim minmax.c
+ 1310  vim minmax.h
+ 1311  vim k3.c
+ 1312  gcc -g k3.c -o K3 
+ 1313  vim k3.c
+ 1314  gcc -g k3.c -o K3 
+ 1315  ./K3 
+ 1316  cd Games/k3
+ 1317  ls
+ 1318  rm LOG 
+ 1319  ls
+ 1320  ls -la
+ 1321  vim k3.c~
+ 1322  vim k3.c
+ 1323  vim minmax.h
+ 1324  vim k3.c
+ 1325  vim minmax.c
+ 1326  vim k3.c
+ 1327  vim minmax.c
+ 1328  vim k3.c
+ 1329  vim minmax.c
+ 1330  gcc -g k3.c -o K3 
+ 1331  ./K3 
+ 1332  clear
+ 1333  vim minmax.c
+ 1334  gcc -g k3.c -o K3 
+ 1335  ./K3 
+ 1336  vim k3.c
+ 1337  vim minmax.h
+ 1338  vim minmax.c
+ 1339  vim k3.c
+ 1340  vim minmax.h
+ 1341  vim minmax.c
+ 1342  vim minmax.h
+ 1343  vim k3.c
+ 1344  gcc -g k3.c -o K3 
+ 1345  ./K3 
+ 1346  vim k3.c
+ 1347  vim minmax.c
+ 1348  gcc -g k3.c -o K3 
+ 1349  ./K3 
+ 1350  vim minmax.c
+ 1351  gcc -g k3.c -o K3 
+ 1352  ./K3 
+ 1353  vim minmax.c
+ 1354  vim k3.c
+ 1355  vim minmax.c
+ 1356  vim k3.c
+ 1357  gcc -g k3.c -o K3 
+ 1358  ./K3 
+ 1359  vim k3.c
+ 1360  vim minmax.c
+ 1361  vim k3.c
+ 1362  gcc -g k3.c -o K3 
+ 1363  ./K3 
+ 1364  vim minmax.c
+ 1365  python
+ 1366  vim minmax.c
+ 1367  gcc -g k3.c -o K3 
+ 1368  ./K3 
+ 1369  python
+ 1370  vim minmax.c
+ 1371  gcc -g k3.c -o K3 
+ 1372  ./K3 
+ 1373  cd Games/
+ 1374  cd k3
+ 1375  ./backup.sh
+ 1376  ./netup.sh 
+ 1377  sudo noip2 
+ 1378  ./sens
+ 1379  [C
+ 1380  ./sens
+ 1381  [A
+ 1382  ./sens
+ 1383  cd Games/k3
+ 1384  ./K3 
+ 1385  cd Games/
+ 1386  ./k2
+ 1387  cd k3
+ 1388  gcc k3.c -o K3 
+ 1389  ./K3 
+ 1390  gcc k3.c -o K3 
+ 1391  ./K3 
+ 1392  gdb ./K3
+ 1393  gcc -g k3.c -o K3 
+ 1394  gdb ./K3
+ 1395  gcc -g k3.c -o K3 
+ 1396  gdb ./K3
+ 1397  gcc -g k3.c -o K3 
+ 1398  valgrind ./K3
+ 1399  gcc -g k3.c -o K3 
+ 1400  date
+ 1401  date +%d
+ 1402  date +%d-%d-%y
+ 1403  date +%b-%d-%y
+ 1404  date +%d-%m-%y
+ 1405  ls /mnt/
+ 1406  ls /media/
+ 1407  ls /media/evg/
+ 1408  ls /media/evg/Evg/
+ 1409  v="/media/evg/Evg/"
+ 1410  echo $v
+ 1411  if mount | grep $v; then echo "OK; else echo "Bad"; fi
+ 1412  ;
+ 1413  if mount | grep $v; then echo "OK; else echo "Bad"; fi;
+ 1414  if mount | grep $v then echo "OK else echo "Bad" fi;
+ 1415  s
+ 1416  mount
+ 1417  mount | grep $v
+ 1418  echo mount | grep $v
+ 1419  echo `mount | grep $v`
+ 1420  echo `mount|grep $v`
+ 1421  mount|grep $v
+ 1422  cat /dev/sdc1
+ 1423  sudo cat /dev/sdc1
+ 1424  62;9;c62;9;cmount
+ 1425  mount
+ 1426  ma mount
+ 1427  man mount
+ 1428  mount $v
+ 1429  mount
+ 1430  mount | grep /dev/sdc1
+ 1431  v="/dev/sdc1"
+ 1432  mount | grep $v
+ 1433  if mount | grep $v; then echo "OK"; else echo "Bad"; fi;
+ 1434  mount | grep /media
+ 1435  mount | grep /media/evg/Evg/
+ 1436  mount | grep /media/evg/Evg
+ 1437  cd
+ 1438  cd Games/k3/
+ 1439  gedit backup.sh
+ 1440  ls
+ 1441  chmod 755 backup.sh
+ 1442  ./backup.sh 
+ 1443  date+%d
+ 1444  date+%b
+ 1445  ./backup.sh 
+ 1446  man date
+ 1447  ./backup.sh 
+ 1448  cd $v
+ 1449  cd $VOL
+ 1450  cd /media/evg/Evg/backup/
+ 1451  ls
+ 1452  ls -la
+ 1453  chmod 777 project/
+ 1454  ls -la
+ 1455  sudo chmod 777 project/
+ 1456  ls -la
+ 1457  cd project/
+ 1458  ls
+ 1459  touch test
+ 1460  ls
+ 1461  ls -l
+ 1462  chmod 777 test 
+ 1463  ls -l
+ 1464  man chown
+ 1465  cd ..
+ 1466  sudo chown -R evg:evg project/
+ 1467  ls -l
+ 1468  cd project/
+ 1469  ls -l
+ 1470  cd
+ 1471  cd Games/k3/
+ 1472  tar -cpzf /media/evg/Evg/backup/project/fname.tar.gz .
+ 1473  tar -cpzf /media/evg/Evg/backup/project/fname.tar.gz ./*
+ 1474  tar -cpzf /media/evg/Evg/backup/project/fname.tar.gz *
+ 1475  ./backup.sh
+ 1476  find . -type f -mtime +1
+ 1477  find . -type f -cmin +60
+ 1478  find ./ -type f -cmin +60
+ 1479  find  -type f -cmin +60
+ 1480  touch minmax.h
+ 1481  find  -type f -cmin +60
+ 1482  rm *~
+ 1483  find  -type f -cmin +60
+ 1484  ls
+ 1485  find  -type f -cmin +5
+ 1486  ls -l
+ 1487  date -r *
+ 1488  date -r k3.c 
+ 1489  make
+ 1490  automake
+ 1491  ls
+ 1492  autoconf 
+ 1493  man autoconf 
+ 1494  info autoconf
+ 1495  ps
+ 1496  who
+ 1497  git
+ 1498  sudo apt-get install git
+ 1499  sudo dpkg --configure -a
+ 1500  sudo apt-get install git
+ 1501  git config --global user.name "evinlort"
+ 1502  git config --global user.email "evgeny.gr81@gmail.com
+ 1503  "
+ 1504  git config --global user.email "evgeny.gr81@gmail.com"
+ 1505  ls -la ~/.ssh
+ 1506  cd ~/.ssh/
+ 1507  ssh-keygen -t rsa -C "evgeny.gr81@gmail.com"
+ 1508  eval "$(ssh-agent -s)"
+ 1509  ssh-add ~/.ssh/git
+ 1510  ssh-add ~/.ssh/git.pub 
+ 1511  ssh-add ~/.ssh/git
+ 1512  sudo apt-get install xclip 
+ 1513  cat git.pub 
+ 1514  xclip -sel clip < ./git.pub 
+ 1515  ls
+ 1516  ssh -T git@github.com
+ 1517  exit
+ 1518  cd Games/k3
+ 1519  git status 
+ 1520  git init
+ 1521  ls
+ 1522  ls -la
+ 1523  cd .git/
+ 1524  ls
+ 1525  cat HEAD 
+ 1526  cd objects/
+ 1527  ls
+ 1528  cd i
+ 1529  cd info/
+ 1530  ls
+ 1531  cd ..
+ 1532  ls
+ 1533  git add .
+ 1534  git commit -m "First commit!"
+ 1535  git remote add origin https://github.com/evinlort/Kalah-Game
+ 1536  git remote -v
+ 1537  git push origin master
+ 1538  git push --help
+ 1539  git push origin master
+ 1540  cd Games/k3
+ 1541  git push origin master --force
+ 1542  cd Games/k3
+ 1543  ls
+ 1544  ./backup.sh 
+ 1545  vim k3.c 
+ 1546  ./K3 
+ 1547  vim k3.c 
+ 1548  vim minmax.c
+ 1549  vim k3.c 
+ 1550  vim minmax.c
+ 1551  vim minmax.h
+ 1552  vim minmax.c
+ 1553  gcc -g k3.c -o K3 
+ 1554  vim k3.c 
+ 1555  gcc -g k3.c -o K3 
+ 1556  ./K3 
+ 1557  vim k3.c 
+ 1558  vim minmax.c
+ 1559  gcc -g k3.c -o K3 
+ 1560  ./K3 
+ 1561  vim minmax.c
+ 1562  gcc -g k3.c -o K3 
+ 1563  ./K3 
+ 1564  vim k3.c 
+ 1565  vim minmax.c
+ 1566  vim k3.c 
+ 1567  vim minmax.c
+ 1568  vim k3.c 
+ 1569  vim minmax.c
+ 1570  gcc -g k3.c -o K3 
+ 1571  ./K3 
+ 1572  vim minmax.c
+ 1573  vim minmax.h
+ 1574  vim minmax.c
+ 1575  gcc -g k3.c -o K3 
+ 1576  vim k3.c 
+ 1577  gcc -g k3.c -o K3 
+ 1578  ./K3 
+ 1579  vim k3.c 
+ 1580  gcc -g k3.c -o K3 
+ 1581  ./K3 
+ 1582  vim minmax.c
+ 1583  gcc -g k3.c -o K3 
+ 1584  ./K3 
+ 1585  vim minmax.c
+ 1586  gcc -g k3.c -o K3 
+ 1587  ./K3 
+ 1588  python
+ 1589  clear
+ 1590  cd Games/k3
+ 1591  ls
+ 1592  ls -la
+ 1593  git status 
+ 1594  git add .
+ 1595  git status 
+ 1596  git commit -m "2 commit"
+ 1597  history
+ 1598  git push origin master --force
+ 1599  ./backup.sh 
+ 1600  ls /media/evg/Evg/backup/project/
+ 1601  cd Games/k3
+ 1602  ls
+ 1603  vim k3.c 
+ 1604  vim minmax.
+ 1605  ls
+ 1606  vim minmax.c
+ 1607  python
+ 1608  vim minmax.c
+ 1609  vim k3.c 
+ 1610  vim minmax.c
+ 1611  vim minmax.h
+ 1612  gcc -g k3.c -o K3 
+ 1613  vim minmax.c
+ 1614  gcc -g k3.c -o K3 
+ 1615  ./K3 
+ 1616  vim k3.c 
+ 1617  vim minmax.c
+ 1618  gcc -g k3.c -o K3 
+ 1619  vim minmax.c
+ 1620  gcc -g k3.c -o K3 
+ 1621  ./K3 
+ 1622  vim minmax.c
+ 1623  gcc -g k3.c -o K3 
+ 1624  ./K3 
+ 1625  vim k3.c 
+ 1626  gcc -g k3.c -o K3 
+ 1627  ./K3 
+ 1628  ./backup.sh 
+ 1629  git add .
+ 1630  git status
+ 1631  git push origin master --force
+ 1632  git status
+ 1633  git commit -m "Update"
+ 1634  git status
+ 1635  git push origin master --force
+ 1636  cd Games/k3
+ 1637  ls
+ 1638  vim k3.c 
+ 1639  vim minmax.h
+ 1640  vim minmax.c
+ 1641  vim k3.c 
+ 1642  ./backup.sh 
+ 1643  git add .
+ 1644  git commit -m "c"
+ 1645  git push master
+ 1646  git push origin
+ 1647  git push origin master
+ 1648  exit
+ 1649  cd Games/k3
+ 1650  ls
+ 1651  ./K3
+ 1652  clear
+ 1653  ./K3 
+ 1654  cd Games/k3
+ 1655  ls
+ 1656  rm *~
+ 1657  ls
+ 1658  ls /media/evg/Evg/backup/project/
+ 1659  ls
+ 1660  clear
+ 1661  vim k3.c 
+ 1662  vim minmax.c 
+ 1663  vim k3.c 
+ 1664  vim minmax.c 
+ 1665  vim k3.c 
+ 1666  gcc -g k3.c  -o K3 
+ 1667  vim minmax.c 
+ 1668  vim k3.c 
+ 1669  gcc -g k3.c  -o K3 
+ 1670  vim minmax.c 
+ 1671  vim k3.c 
+ 1672  gcc -g k3.c  -o K3 
+ 1673  ./K3 
+ 1674  vim minmax.c 
+ 1675  gcc -g k3.c  -o K3 
+ 1676  vim minmax.c 
+ 1677  gcc -g k3.c  -o K3 
+ 1678  ./K3 
+ 1679  ls /var/mail/evg 
+ 1680  ls /var/mail/
+ 1681  ls -la /var/mail/
+ 1682  cat /var/mail/evg 
+ 1683  cat /var/mail/evg | tail
+ 1684  mail
+ 1685  cat /var/mail/evg c
+ 1686  clear
+ 1687  git add .
+ 1688  git commit -m "Commit"
+ 1689  git push origin master
+ 1690  ifconfig 
+ 1691  exit
+ 1692  cd Games/k3
+ 1693  vim k3.c 
+ 1694  gcc -g k3.c  -o K3 
+ 1695  ./K3 
+ 1696  gcc -g k3.c  -o K3 
+ 1697  vim minmax.h
+ 1698  vim minmax.c
+ 1699  vim test.c
+ 1700  gcc -g test.c -o Test
+ 1701  vim test.c
+ 1702  gcc -g test.c -o Test
+ 1703  ./Test 
+ 1704  gcc -g test.c -o Test
+ 1705  vim test.c
+ 1706  gcc -g test.c -o Test
+ 1707  ./Test 
+ 1708  vim test.c
+ 1709  gcc -g test.c -o Test
+ 1710  ./Test 
+ 1711  vim test.c
+ 1712  gcc -g test.c -o Test
+ 1713  ./Test 
+ 1714  vim test.c
+ 1715  gcc -g test.c -o Test
+ 1716  ./Test 
+ 1717  vim test.c
+ 1718  gcc -g test.c -o Test
+ 1719  ./Test 
+ 1720  vim test.c
+ 1721  gcc -g test.c -o Test
+ 1722  ./Test 
+ 1723  vim test.c
+ 1724  gcc -g test.c -o Test
+ 1725  ./Test 
+ 1726  vim test.c
+ 1727  gcc -g test.c -o Test
+ 1728  vim test.c
+ 1729  gcc -g test.c -o Test
+ 1730  ./Test 
+ 1731  vim test.c
+ 1732  gcc -g test.c -o Test
+ 1733  ./Test 
+ 1734  vim test.c
+ 1735  gcc -g test.c -o Test
+ 1736  ./Test 
+ 1737  vim test.c
+ 1738  gcc -g test.c -o Test
+ 1739  ./Test 
+ 1740  vim test.c
+ 1741  gcc -g test.c -o Test
+ 1742  ./Test 
+ 1743  vim test.c
+ 1744  gcc -g test.c -o Test
+ 1745  ./Test 
+ 1746  vim test.c
+ 1747  gcc -g test.c -o Test
+ 1748  ./Test 
+ 1749  vim test.c
+ 1750  gcc -g test.c -o Test
+ 1751  ./Test 
+ 1752  vim test.c
+ 1753  gcc -g test.c -o Test
+ 1754  ./Test 
+ 1755  vim test.c
+ 1756  gcc -g test.c -o Test
+ 1757  ./Test 
+ 1758  vim test.c
+ 1759  gcc -g test.c -o Test
+ 1760  ./Test 
+ 1761  vim test.c
+ 1762  gcc -g test.c -o Test
+ 1763  vim test.c
+ 1764  gcc -g test.c -o Test
+ 1765  ./Test 
+ 1766  vim test.c
+ 1767  gcc -g test.c -o Test
+ 1768  ./Test 
+ 1769  time ./Test 
+ 1770  gcc -g test.c -o Test
+ 1771  vim test.c
+ 1772  gcc -g test.c -o Test
+ 1773  time ./Test 
+ 1774  vim test.c
+ 1775  gcc -g test.c -o Test
+ 1776  time ./Test 
+ 1777  vim test.c
+ 1778  gcc -g test.c -o Test
+ 1779  time ./Test 
+ 1780  vim test.c
+ 1781  gcc -g test.c -o Test
+ 1782  time ./Test 
+ 1783  vim test.c
+ 1784  gcc -g test.c -o Test
+ 1785  time ./Test 
+ 1786  vim test.c
+ 1787  gcc -g test.c -o Test
+ 1788  time ./Test 
+ 1789  vim test.c
+ 1790  gcc -g test.c -o Test
+ 1791  time ./Test 
+ 1792  vim test.c
+ 1793  time ./Test 
+ 1794  gcc -g test.c -o Test
+ 1795  vim test.c
+ 1796  gcc -g test.c -o Test
+ 1797  vim test.c
+ 1798  gcc -g test.c -o Test
+ 1799  vim test.c
+ 1800  gcc -g test.c -o Test
+ 1801  vim test.c\
+ 1802  vim test.c
+ 1803  gcc -g test.c -o Test
+ 1804  vim test.c\
+ 1805  vim test.c
+ 1806  gcc -g test.c -o Test
+ 1807  ./Test 
+ 1808  vim test.c
+ 1809  gcc -g test.c -o Test
+ 1810  ./Test 
+ 1811  vim test.c
+ 1812  gcc -g test.c -o Test
+ 1813  ./Test 
+ 1814  vim test.c
+ 1815  gcc -g test.c -o Test
+ 1816  ./Test 
+ 1817  time ./Test 
+ 1818  vim test.c
+ 1819  gcc -g test.c -o Test
+ 1820  time ./Test 
+ 1821  vim test.c
+ 1822  gcc -g test.c -o Test
+ 1823  time ./Test 
+ 1824  vim test.c
+ 1825  gcc -g test.c -o Test
+ 1826  vim test.c
+ 1827  gcc -g test.c -o Test
+ 1828  time ./Test 
+ 1829  vim test.c
+ 1830  gcc -g test.c -o Test
+ 1831  time ./Test 
+ 1832  vim test.c
+ 1833  gcc -g test.c -o Test
+ 1834  time ./Test 
+ 1835  vim test.c
+ 1836  gcc -g test.c -o Test
+ 1837  time ./Test 
+ 1838  vim test.c
+ 1839  gcc -g test.c -o Test
+ 1840  time ./Test 
+ 1841  vim test.c
+ 1842  gcc -g test.c -o Test
+ 1843  time ./Test 
+ 1844  vim test.c
+ 1845  gcc -g test.c -o Test
+ 1846  time ./Test 
+ 1847  vim test.c
+ 1848  gcc -g test.c -o Test
+ 1849  time ./Test 
+ 1850  vim test.c
+ 1851  cd Games/k3
+ 1852  ls
+ 1853  vim test.c
+ 1854  rm test.c~
+ 1855  vim test.c
+ 1856  rm .test.c.swp 
+ 1857  vim test.c
+ 1858  gcc -g test.c -o Test 
+ 1859  ./Test 
+ 1860  vim test.c
+ 1861  gcc -g test.c -o Test 
+ 1862  ./Test 
+ 1863  vim test.c
+ 1864  ./Test 
+ 1865  gcc -g test.c -o Test 
+ 1866  ./Test 
+ 1867  vim test.c
+ 1868  gcc -g test.c -o Test 
+ 1869  ./Test 
+ 1870  vim test.c
+ 1871  gcc -g test.c -o Test 
+ 1872  ./Test 
+ 1873  vim test.c
+ 1874  gcc -g test.c -o Test 
+ 1875  ./Test 
+ 1876  vim test.c
+ 1877  gcc -g test.c -o Test 
+ 1878  ./Test 
+ 1879  vim test.c
+ 1880  ./Test 
+ 1881  gcc -g test.c -o Test 
+ 1882  ./Test 
+ 1883  vim test.c
+ 1884  gcc -g test.c -o Test 
+ 1885  ./Test 
+ 1886  gcc -g test.c -o Test 
+ 1887  vim test.c
+ 1888  gcc -g test.c -o Test 
+ 1889  ./t
+ 1890  ./Test 
+ 1891  gcc -g test.c -o Test 
+ 1892  vim test.c
+ 1893  gcc -g test.c -o Test 
+ 1894  ./Test 
+ 1895  vim test.c
+ 1896  gcc -g test.c -o Test 
+ 1897  ./Test 
+ 1898  valgrind ./Test
+ 1899  valgrind ./Test --log-file=LOG
+ 1900  ls
+ 1901  valgrind --log-file=LOG ./Test
+ 1902  ls
+ 1903  ls -l
+ 1904  vim LOG 
+ 1905  vim test.c 
+ 1906  gcc -g test.c -o Test 
+ 1907  valgrind --log-file=LOG ./Test
+ 1908  vim test.c 
+ 1909  gcc -g test.c -o Test 
+ 1910  valgrind --log-file=LOG ./Test
+ 1911  vim test.c 
+ 1912  gcc -g test.c -o Test 
+ 1913  valgrind --log-file=LOG ./Test
+ 1914  vim test.c 
+ 1915  cd Games/k3
+ 1916  l
+ 1917  man l
+ 1918  l
+ 1919  ls
+ 1920  l -h
+ 1921  l --help
+ 1922  l --help | head
+ 1923  a
+ 1924  l -l
+ 1925  ls -la
+ 1926  ls -l
+ 1927  clear
+ 1928  ls -l
+ 1929  cat backup.sh~
+ 1930  cat backup.sh
+ 1931  cleqr
+ 1932  clear
+ 1933  vim test.c
+ 1934  gcc -g test.c -o Test 
+ 1935  ./Test 
+ 1936  vim test.c
+ 1937  cd Games/k3
+ 1938  ls
+ 1939  ls -a
+ 1940  vim test.c 
+ 1941  gcc -g test.c -o Test 
+ 1942  vim test.c 
+ 1943  gcc -g test.c -o Test 
+ 1944  ./Test 
+ 1945  vim test.c 
+ 1946  gcc -g test.c -o Test 
+ 1947  ./Test 
+ 1948  vim test.c 
+ 1949  gcc -g test.c -o Test 
+ 1950  ./Test 
+ 1951  vim test.c 
+ 1952  gcc -g test.c -o Test 
+ 1953  ./Test 
+ 1954  vim test.c 
+ 1955  gcc -g test.c -o Test 
+ 1956  ./Test 
+ 1957  vim test.c 
+ 1958  gcc -g test.c -o Test 
+ 1959  ./Test 
+ 1960  vim test.c 
+ 1961  gcc -g test.c -o Test 
+ 1962  ./Test 
+ 1963  vim test.c 
+ 1964  gcc -g test.c -o Test 
+ 1965  ./Test 
+ 1966  vim test.c 
+ 1967  gcc -g test.c -o Test 
+ 1968  ./Test 
+ 1969  vim test.c 
+ 1970  gcc -g test.c -o Test 
+ 1971  ./Test 
+ 1972  vim test.c 
+ 1973  gcc -g test.c -o Test 
+ 1974  ./Test 
+ 1975  vim test.c 
+ 1976  gcc -g test.c -o Test 
+ 1977  ./Test 
+ 1978  vim test.c 
+ 1979  gcc -g test.c -o Test 
+ 1980  ./Test 
+ 1981  vim test.c 
+ 1982  gcc -g test.c -o Test 
+ 1983  ./Test 
+ 1984  vim test.c 
+ 1985  ./Test 
+ 1986  gcc -g test.c -o Test 
+ 1987  ./Test 
+ 1988  vim test.c 
+ 1989  gcc -g test.c -o Test 
+ 1990  ./Test 
+ 1991  vim test.c 
+ 1992  gcc -g test.c -o Test 
+ 1993  ./Test 
+ 1994  cd Games/k3
+ 1995  ls
+ 1996  rm LOG 
+ 1997  ./git.sh 
+ 1998  git add .
+ 1999  git commit -m " Git comm"
+ 2000  git push origin master
+ 2001  history > his

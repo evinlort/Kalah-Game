@@ -9,6 +9,7 @@ struct Node {
 	int vals[6];
 	int value;
 	int last_stop;
+	int on_move;
 };
 typedef struct Node Node;
 
@@ -22,6 +23,9 @@ int main(void) {
 
 	root=(Node*)malloc(sizeof(Node));
 	temp=(Node*)malloc(sizeof(Node));
+	root->value=0;
+	root->on_move=0;
+	root->last_stop=0;
 	for(i=0;i<14;i++) {
 		if(i==0 || i==7)
 			continue;
@@ -35,28 +39,13 @@ for(q=0;q<6;q++) {
 		printf("%d ",root->child[q]->b[i]);//temp->b[i]);
 	printf(" - %d \n",root->child[q]->value);
 }
-printf("Ogo 5?: %d\n",root->child[0]->child[2]->b[0]);
-/*t=0;
-temp=root;
-for(q=0;q<depth;q++) {
-	root=root->child[0];
-	printf(" Node %d\n",q);
-	for(t=0;t<6;t++) {
-	root=root->parent->child[t];
-	if(root!=NULL) {
-		printf("Line %d : ",t);
-		for(i=0;i<14;i++)
-			printf("%d ",root->b[i]);
-	}
-	else break;
-	printf("\n");
-	}
-}
-*/	return 0;
+//printf("Best score : %d \n",root->child[1]->child[2]->b[0]);
+printf("val :%d\n",root->value);
+	return 0;
 }
 
 Node * mm(Node * n, int depth, int a,int count) {
-	int i,k;
+	int i,k,m;
 	Node * t;
 	if(depth == 0) return NULL;
 	for(i=8;i<14;i++) {
@@ -69,8 +58,19 @@ Node * mm(Node * n, int depth, int a,int count) {
 			continue;
 		}
 		MakeMove(t,i,0);
+		k=t->value;
 		t->child[i-8] = mm(t,depth-1,0,count);
 	}
+	k=0;
+	for(i=0;i<6;i++){
+		if(n->child[i]->value>k) {
+			k=n->child[i]->value;
+			n->last_stop=n->child[i]->last_stop;
+			m=n->last_stop;
+		}
+	}
+	n->on_move=k;
+	printf("val : %d, last : %d, d : %d\n",k,m,depth);
 	return t->parent;
 }
 
@@ -94,7 +94,7 @@ int MakeMove(Node * n, int move,int b) {
 		n->value = abs(n->b[7] - n->b[0]) + 2;
 	else {
 		n->value = abs(n->b[7] - n->b[0]);
-		printf("val : %d , move : %d\n",n->value,test);
+//		printf("val : %d , move : %d\n",n->value,test);
 	}
 }
 	
