@@ -97,5 +97,5 @@ int MakeMove(Node * n, int move,int b) {
 //		printf("val : %d , move : %d\n",n->value,test);
 	}
 }
-// *** End :)	
+	
 
